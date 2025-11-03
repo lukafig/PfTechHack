@@ -1,0 +1,210 @@
+[
+  {
+    "id": 26,
+    "url": "https://github.com/",
+    "timestamp": "2025-11-02T21:38:36.778251",
+    "risk_score": 2.0,
+    "classification": "SAFE",
+    "is_safe": true
+  },
+  {
+    "id": 25,
+    "url": "http://localhost:3000/",
+    "timestamp": "2025-11-02T21:37:23.766345",
+    "risk_score": 8.75,
+    "classification": "SAFE",
+    "is_safe": true
+  },
+  {
+    "id": 24,
+    "url": "about:debugging#/runtime/this-firefox",
+    "timestamp": "2025-11-02T21:37:11.878293",
+    "risk_score": 0.0,
+    "classification": "SAFE",
+    "is_safe": true
+  },
+  {
+    "id": 23,
+    "url": "about:debugging#/runtime/this-firefox",
+    "timestamp": "2025-11-02T21:30:58.602159",
+    "risk_score": 0.0,
+    "classification": "SAFE",
+    "is_safe": true
+  },
+  {
+    "id": 22,
+    "url": "about:debugging#/runtime/this-firefox",
+    "timestamp": "2025-11-02T21:30:47.765394",
+    "risk_score": 0.0,
+    "classification": "SAFE",
+    "is_safe": true
+  },
+  {
+    "id": 21,
+    "url": "http://localhost:3000/",
+    "timestamp": "2025-11-02T21:30:30.933961",
+    "risk_score": 8.75,
+    "classification": "SAFE",
+    "is_safe": true
+  },
+  {
+    "id": 20,
+    "url": "https://web3finvault.com/clm.html",
+    "timestamp": "2025-11-02T21:22:57.292110",
+    "risk_score": 59.85,
+    "classification": "MEDIUM_RISK",
+    "is_safe": false
+  },
+  {
+    "id": 19,
+    "url": "https://www.phishtank.com/phish_search.php?valid=y&active=All&Search=Search",
+    "timestamp": "2025-11-02T21:22:38.694276",
+    "risk_score": 30.4,
+    "classification": "LOW_RISK",
+    "is_safe": true
+  },
+  {
+    "id": 18,
+    "url": "https://www.phishtank.com/phish_archive.php",
+    "timestamp": "2025-11-02T21:22:35.322801",
+    "risk_score": 26.2,
+    "classification": "LOW_RISK",
+    "is_safe": true
+  },
+  {
+    "id": 17,
+    "url": "https://www.google.com/search?client=ubuntu-sn&channel=fs&q=phistank",
+    "timestamp": "2025-11-02T21:22:31.343115",
+    "risk_score": 11.7,
+    "classification": "SAFE",
+    "is_safe": true
+  },
+  {
+    "id": 16,
+    "url": "https://www.phishtank.com/",
+    "timestamp": "2025-11-02T21:22:31.341078",
+    "risk_score": 27.25,
+    "classification": "LOW_RISK",
+    "is_safe": true
+  },
+  {
+    "id": 15,
+    "url": "https://www.phishtank.com/phish_archive.php",
+    "timestamp": "2025-11-02T21:22:31.329710",
+    "risk_score": 26.2,
+    "classification": "LOW_RISK",
+    "is_safe": true
+  },
+  {
+    "id": 14,
+    "url": "http://suspicious-paypal-login.com",
+    "timestamp": "2025-11-02T21:22:13.208311",
+    "risk_score": 10.45,
+    "classification": "SAFE",
+    "is_safe": true
+  },
+  {
+    "id": 13,
+    "url": "http://localhost:3000/",
+    "timestamp": "2025-11-02T20:55:15.857080",
+    "risk_score": 8.75,
+    "classification": "SAFE",
+    "is_safe": true
+  },
+  {
+    "id": 12,
+    "url": "http://localhost:3000/",
+    "timestamp": "2025-11-02T20:55:11.608742",
+    "risk_score": 8.75,
+    "classification": "SAFE",
+    "is_safe": true
+  },
+  {
+    "id": 11,
+    "url": "https://github.com/",
+    "timestamp": "2025-11-02T20:49:21.840156",
+    "risk_score": 2.0,
+    "classification": "SAFE",
+    "is_safe": true
+  },
+  {
+    "id": 10,
+    "url": "https://github.com/",
+    "timestamp": "2025-11-02T20:49:21.838045",
+    "risk_score": 2.0,
+    "classification": "SAFE",
+    "is_safe": true
+  },
+  {
+    "id": 9,
+    "url": "about:newtab",
+    "timestamp": "2025-11-02T20:49:11.354894",
+    "risk_score": 0.0,
+    "classification": "SAFE",
+    "is_safe": true
+  },
+  {
+    "id": 8,
+    "url": "about:debugging#/runtime/this-firefox",
+    "timestamp": "2025-11-02T20:49:06.620999",
+    "risk_score": 0.0,
+    "classification": "SAFE",
+    "is_safe": true
+  },
+  {
+    "id": 7,
+    "url": "about:debugging#/runtime/this-firefox",
+    "timestamp": "2025-11-02T20:49:02.678005",
+    "risk_score": 0.0,
+    "classification": "SAFE",
+    "is_safe": true
+  },
+  {
+    "id": 6,
+    "url": "about:newtab",
+    "timestamp": "2025-11-02T20:48:10.245303",
+    "risk_score": 0.0,
+    "classification": "SAFE",
+    "is_safe": true
+  },
+  {
+    "id": 5,
+    "url": "about:newtab",
+    "timestamp": "2025-11-02T20:48:07.179986",
+    "risk_score": 0.0,
+    "classification": "SAFE",
+    "is_safe": true
+  },
+  {
+    "id": 4,
+    "url": "about:newtab",
+    "timestamp": "2025-11-02T20:47:17.340277",
+    "risk_score": 0.0,
+    "classification": "SAFE",
+    "is_safe": true
+  },
+  {
+    "id": 3,
+    "url": "about:newtab",
+    "timestamp": "2025-11-02T20:47:13.392691",
+    "risk_score": 0.0,
+    "classification": "SAFE",
+    "is_safe": true
+  },
+  {
+    "id": 2,
+    "url": "about:newtab",
+    "timestamp": "2025-11-02T20:47:10.513619",
+    "risk_score": 0.0,
+    "classification": "SAFE",
+    "is_safe": true
+  },
+  {
+    "id": 1,
+    "url": "about:newtab",
+    "timestamp": "2025-11-02T20:47:04.560783",
+    "risk_score": 0.0,
+    "classification": "SAFE",
+    "is_safe": true
+  }
+]

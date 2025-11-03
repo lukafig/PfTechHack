@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>⚠️ PhishGuard - Site Bloqueado</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #E74C3C 0%, #C0392B 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+
+    .container {
+      max-width: 600px;
+      text-align: center;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    }
+
+    .warning-icon {
+      font-size: 100px;
+      margin-bottom: 20px;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    .url-display {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 15px;
+      border-radius: 10px;
+      margin: 20px 0;
+      word-break: break-all;
+      font-family: monospace;
+    }
+
+    .score {
+      font-size: 48px;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+
+    .buttons {
+      margin-top: 30px;
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    button {
+      padding: 15px 30px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .btn-safe {
+      background: white;
+      color: #E74C3C;
+    }
+
+    .btn-safe:hover {
+      background: #f8f9fa;
+      transform: translateY(-2px);
+    }
+
+    .btn-proceed {
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      border: 2px solid white;
+    }
+
+    .btn-proceed:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    .warning-list {
+      text-align: left;
+      background: rgba(0, 0, 0, 0.3);
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+
+    .warning-list ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .warning-list li {
+      padding: 10px 0;
+      padding-left: 25px;
+      position: relative;
+    }
+
+    .warning-list li:before {
+      content: "⚠️";
+      position: absolute;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="warning-icon">🛡️</div>
+    <h1>Site Bloqueado por Segurança</h1>
+    <p>O PhishGuard detectou que este site pode ser perigoso e bloqueou o acesso para proteger você.</p>
+    
+    <div class="url-display" id="blockedUrl">carregando...</div>
+    
+    <div class="score">
+      Score de Risco: <span id="riskScore">--</span>/100
+    </div>
+
+    <div class="warning-list">
+      <strong>⚠️ Por que este site foi bloqueado?</strong>
+      <ul>
+        <li>O site pode estar tentando roubar suas informações pessoais</li>
+        <li>Detectamos características suspeitas de phishing</li>
+        <li>O site pode ser uma imitação de um site legítimo</li>
+        <li>Suas senhas e dados bancários podem estar em risco</li>
+      </ul>
+    </div>
+
+    <div class="buttons">
+      <button class="btn-safe" onclick="goBack()">← Voltar com Segurança</button>
+      <button class="btn-proceed" onclick="proceedAnyway()">Prosseguir (não recomendado)</button>
+    </div>
+
+    <p style="font-size: 14px; margin-top: 30px; opacity: 0.8;">
+      Protegido por PhishGuard - Sistema de Detecção de Phishing com Machine Learning
+    </p>
+  </div>
+
+  <script>
+    // Obter parâmetros da URL
+    const params = new URLSearchParams(window.location.search);
+    const blockedUrl = params.get('url');
+    const riskScore = params.get('score');
+
+    // Exibir informações
+    document.getElementById('blockedUrl').textContent = decodeURIComponent(blockedUrl);
+    document.getElementById('riskScore').textContent = riskScore;
+
+    function goBack() {
+      window.history.back();
+    }
+
+    function proceedAnyway() {
+      if (confirm('⚠️ ATENÇÃO!\n\nVocê está prestes a acessar um site potencialmente perigoso.\n\nNÃO forneça informações pessoais, senhas ou dados bancários.\n\nTem certeza que deseja continuar?')) {
+        window.location.href = decodeURIComponent(blockedUrl);
+      }
+    }
+  </script>
+</body>
+</html>
